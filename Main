@@ -1,0 +1,39 @@
+#include <iostream>
+#include "Numberators.h"
+#include "Frosty.h"
+#include "calculator.h"
+
+using namespace std;
+
+
+int main()
+{
+    cout << numberRator(3,new int);
+    cout << endl;
+    numberRator2(100,new int);
+    cout << endl;
+    cout << endl;
+    abbacuS(new int,new int,new int,new int,new int);
+    frostyAge = 0;
+    frostyPie();
+    string calcInput;
+    
+    cout << "Type <c> to enter calculator" << endl;
+    cout << endl;
+    
+    cin >> calcInput;
+    if (calcInput == "c"||"C")
+    {
+        cout << "Type <p> to turn off calculator" << endl;
+        cout << endl;
+        cout << endl;
+        Calculator euros;
+        euros.turnOn();
+    }
+    if (calcInput == "p"||"P")
+    {
+        Calculator euros;
+        euros.turnOff();
+    }
+
+}
